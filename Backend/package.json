@@ -1,0 +1,17 @@
+{
+  "dependencies": {
+    "express": "^4.18.2",
+    "moongose": "^1.0.0"
+  },
+  "name": "backend",
+  "version": "1.0.0",
+  "main": "DB.js",
+  "devDependencies": {},
+  "scripts": {
+    "start":"node DB.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
