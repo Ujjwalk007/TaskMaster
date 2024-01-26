@@ -1,6 +1,4 @@
 const mon = require('mongoose');
-mon.set('strictQuery', true);
-
 
 mon.connect("mongodb+srv://UK:mongo%40uk@cluster0.awsgmde.mongodb.net/todoData");
 console.log('Database Connected!!')
@@ -12,11 +10,22 @@ const todoSchema = new mon.Schema({
     stat : Boolean
 })
 
+const UserData = new mon.Schema({
+
+   user: String,
+   password:String
+})
 
 
 
-const todolist = mon.model('todo',todoSchema);
+
+
+
+
 
 module.exports = {
-    todolist
+    
+    todoSchema,
+    UserData,
+    mon
 }
