@@ -1,6 +1,6 @@
 const mon = require('mongoose');
 
-connection = 'mongodb+srv://UK:mongo%40uk@cluster0.awsgmde.mongodb.net';
+connection = 'mongodb+srv://<user>:<password>@cluster0.awsgmde.mongodb.net';
 
 mon.connect(connection); 
 console.log('Database Connected!!')
